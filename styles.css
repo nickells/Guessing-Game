@@ -1,5 +1,5 @@
 body {
-  background-color: #AADDDD
+    background:radial-gradient(at top, #000055, #000000);
 }
 #outer-container {
     
@@ -10,7 +10,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    background-color: darkgrey;
+    background:linear-gradient( #666666, #444444);
     padding-bottom: 20px;
     padding-top: 3px;
     margin-top: 50px;
@@ -37,7 +37,7 @@ body {
 }
 #button1 {
     width: 130px;
-    background-color: darkseagreen;
+    background:linear-gradient( #00AA66, #009966);
     border-radius: 4px;
     border: 1px solid green;
     padding-bottom: 10px;
@@ -47,7 +47,7 @@ body {
 }
 #button2 {
     width: 130px;
-    background-color: darkseagreen;
+    background:linear-gradient( #00AA66, #009966);
     border-radius: 4px;
     border: 1px solid green;
     padding-bottom: 10px;
@@ -58,9 +58,42 @@ body {
     text-align: center;
 }
 #button2:hover{
-    background-color: seagreen;
+    background:linear-gradient( #008844, #006622);
     cursor: 
 }
 #button1:hover{
-    background-color: seagreen;
+    background:linear-gradient( #008844, #006622);
+}
+
+#icon{
+    background-image: url("reset_hint.png");
+    position:relative;
+    left: -5px;
+    top: 4px;
+    margin-top: -8px;
+    display:inline-block;
+    width:21px;
+    height:22px;
+}
+#icon2{
+    background-image: url("reset_hint.png");
+    background-position: -20px;
+    position:relative;
+    left: -5px;
+    top: 4px;
+    margin-top: -8px;
+    display:inline-block;
+    width:13px;
+    height:22px;
+}
+#check{
+    background-image: url("check.png");
+    background-position:-8px;
+    position:relative;
+    left: -5px;
+    top: 4px;
+    margin-top: -8px;
+    display:inline-block;
+    width:17px;
+    height:23px;
 }
