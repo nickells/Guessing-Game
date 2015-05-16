@@ -1,12 +1,66 @@
 body {
-    font-family: sans-serif;
-    text-align: center;
+  background-color: #AADDDD
 }
 #outer-container {
+    
 }
 #form {
+    font-family: sans-serif;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: darkgrey;
+    padding-bottom: 20px;
+    padding-top: 3px;
+    margin-top: 50px;
+    color:white;
+    text-align: center;
+    box-shadow: 2px 2px 5px grey;
+    border: 10px solid white;
+    
+}
+
+#buttonholder{
+    font-family: sans-serif;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-top: 10px;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+
+    
 }
 #button1 {
+    width: 130px;
+    background-color: darkseagreen;
+    border-radius: 4px;
+    border: 1px solid green;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
 }
 #button2 {
+    width: 130px;
+    background-color: darkseagreen;
+    border-radius: 4px;
+    border: 1px solid green;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+}
+#button2:hover{
+    background-color: seagreen;
+    cursor: 
+}
+#button1:hover{
+    background-color: seagreen;
 }
