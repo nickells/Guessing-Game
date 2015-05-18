@@ -1,11 +1,12 @@
 body {
-    background:radial-gradient(at top, #000055, #000000);
+    background:radial-gradient(at top, #446, #223, #001, #000);
 }
 #outer-container {
     
 }
 #form {
     font-family: sans-serif;
+
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +20,9 @@ body {
     box-shadow: 2px 2px 5px grey;
     border: 10px solid white;
     
+}
+h1{
+        text-shadow: 3px 3px #224;
 }
 
 #buttonholder{
