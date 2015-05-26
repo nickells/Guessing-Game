@@ -1,27 +1,37 @@
 <html>
 <head>
+        <title>Guess!!</title>
     <link rel="stylesheet" type = "text/css" href="styles.css">
-    <title>Guess!!</title>
+
+
 </head>
 <body>
+<div class="heartContainer">&#9829;&#9829;&#9829;&#9829;</div>
 <div id="outer_container">
+
     <div id="form">
         <h1>THE GUESSING GAME</h1>
     <form>
     Guess a number:<br>
-    <input type="text" name="guess"></form>
-        <div id="button1"><div id="check"></div>Submit</div>
+        
+
+    <input type="number" class="guess" value="1"></form>
+        <div class="button1"><div id="check"></div>Submit</div>
+        <div class="feedback"></div>
     </div>
     <div id="buttonholder">
-        <div id="button2">
+        <div class="button2" id="reset">
         <div id="icon"></div>
         Reset
         </div>
-        <div id="button2">
+        <div class="button2" id="hint">
             <div id="icon2"></div>
         Hint
         </div>
+		<div class = "thermometer"><div class= "bar"></div><div class = "circle"></div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="scripts.js"></script>
 </body>
-    </html>
+</html>

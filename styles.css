@@ -4,6 +4,10 @@ body {
 #outer-container {
     
 }
+
+.heartcontainer {
+	color: red;
+}
 #form {
     font-family: sans-serif;
 
@@ -39,9 +43,9 @@ h1{
 
     
 }
-#button1 {
+.button1 {
     width: 130px;
-    background:linear-gradient( #00AA66, #009966);
+    background:linear-gradient( #008844, #006622);
     border-radius: 4px;
     border: 1px solid green;
     padding-bottom: 10px;
@@ -49,9 +53,9 @@ h1{
     display: inline-block;
     text-align: center;
 }
-#button2 {
+.button2 {
     width: 130px;
-    background:linear-gradient( #00AA66, #009966);
+    background:linear-gradient( #008844, #006622);
     border-radius: 4px;
     border: 1px solid green;
     padding-bottom: 10px;
@@ -61,12 +65,13 @@ h1{
     margin-right: 6px;
     text-align: center;
 }
-#button2:hover{
-    background:linear-gradient( #008844, #006622);
-    cursor: 
+.button2:hover{
+    background:linear-gradient( #00AA66, #009966);
+    cursor: pointer;
 }
-#button1:hover{
-    background:linear-gradient( #008844, #006622);
+.button1:hover{
+    background:linear-gradient( #00AA66, #009966);
+     cursor: pointer;
 }
 
 #icon{
@@ -101,3 +106,45 @@ h1{
     width:17px;
     height:23px;
 }
+
+.feedback{
+	font-size: 10pt;
+    margin-top: 10px;
+    margin-bottom:-6px;
+}
+
+.guess{
+	height:30px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.thermometer{
+	background-color: white;
+	width: 400px;
+	height: 20px;
+	margin-left: -40px;
+	margin-top: 20px;
+	border-radius: 50px;
+}
+.circle{
+	position: relative;
+	z-index: -1;
+	top: -13px;
+	left: -10px;
+	background-color: white;
+	width: 100px;
+	height: 26px;
+	border-radius: 50px;
+}
+.bar {
+	position: relative;
+	z-index: 4;
+	top: 5px;
+	left: 5px;
+	background-color: #F0A;
+	width: 200px;
+	height: 10px;
+}
+	
