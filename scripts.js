@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var numberChoice = Math.floor(Math.random()*100);
  	var wrongTimes = 0;
     $('.button1').on('click', function(){
-		
+
         var guess = $("input").val();
         var diff = numberChoice - guess;
         var absDiff = Math.abs(diff);
@@ -16,13 +16,16 @@ $(document).ready(function() {
 		
 		var allGuesses = [];
 		allGuesses.push(guess);
+		
+		$('.list').append("<br>" + guess );
 		for(var x=0; x <= (allGuesses.length - 1); x++){
 			if (allGuesses[x] == guess){
-				alert("Repeat guess!");
+//				alert("Repeat guess!"); I turned this feature off because it wasn't working quite correctly and ended up being intrusive
 			}
 		};
 		
 		$('.bar').animate({width: 375-(375*(absDiff*.01))}, 1000);
+//wrong answer		
 		if (diff != 0){
 			wrongTimes = wrongTimes + 1;
 				if (wrongTimes == 1){
@@ -69,13 +72,15 @@ $(document).ready(function() {
 			$('.bar').animate({'backgroundColor': '#F06'}, 500);
 
         }
+		
+//right answer
         else if(absDiff == 0 && guess < 100 && guess > 0){
             $('.feedback').text('That\'s it!');
 			$('.bar').animate({'backgroundColor': '#F00'}, 500);
         };
         $('.feedback').slideDown();
     });
-	
+//button colors etc
 	$('#reset').on('mousedown', function(){
 	    $('.guess').css({'background-color':'red'});
  	});
@@ -90,7 +95,7 @@ $(document).ready(function() {
 	    $('.guess').css({'background-color':'white'});
  	});
 	
-
+//hint
     $('#hint').on('click',function(){
 		$('.feedback').slideDown();
         $('.feedback').text('The number is ' + numberChoice);
@@ -98,9 +103,10 @@ $(document).ready(function() {
     });
    
 
-
+//reset button
 	
     $('#reset').on('click',function(){
+		$('.list').text("Previous guesses:");
 		wrongTimes = 0;
         var newNumber = Math.floor(Math.random()*100);
         numberChoice = newNumber;
