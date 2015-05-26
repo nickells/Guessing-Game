@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$('.feedback').hide();
 	var numberChoice = Math.floor(Math.random()*100);
  	var wrongTimes = 0;
+	var allGuesses = [];
     $('.button1').on('click', function(){
 
         var guess = $("input").val();
@@ -14,13 +15,14 @@ $(document).ready(function() {
         var absDiff = Math.abs(diff);
 		var signMessage = "";
 		
-		var allGuesses = [];
+
 		allGuesses.push(guess);
 		
 		$('.list').append("<br>" + guess );
-		for(var x=0; x <= (allGuesses.length - 1); x++){
+		for(var x=0; x <= (allGuesses.length-2); x++){
 			if (allGuesses[x] == guess){
-//				alert("Repeat guess!"); I turned this feature off because it wasn't working quite correctly and ended up being intrusive
+				alert("Repeat guess!"); 
+//				I turned this feature off because it wasn't working quite correctly and ended up being intrusive
 			}
 		};
 		
@@ -114,6 +116,7 @@ $(document).ready(function() {
 		$("input").val(1);
 		$(".heartContainer").text("\u2665\u2665\u2665\u2665");
 		$('.bar').animate({'width': '200' ,'background-color': '#F0A'});
+		allGuesses = [];
 
 
     });
