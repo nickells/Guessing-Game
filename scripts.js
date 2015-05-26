@@ -1,6 +1,6 @@
 //to do:
 // fix repeat indicator
-// add list of previous guesses!
+// make winning background
 
 $(document).ready(function() {
 
