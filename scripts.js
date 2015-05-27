@@ -1,6 +1,3 @@
-//to do:
-// fix repeat indicator
-// make winning background
 
 $(document).ready(function () {
 
@@ -56,22 +53,26 @@ $(document).ready(function () {
         if (absDiff <=100 && absDiff >=75 && guess < 100 && guess > 0){
             $('.feedback').text('You\'re so cold! ' + signMessage);
 			$('.bar').animate({'backgroundColor': '#00F'}, 500);
+			$('.list').append(" (Cold)");
 
         }
         else if(absDiff <=74 && absDiff >=50 && guess < 100 && guess > 0){
             $('.feedback').text('You\'re cool! ' + signMessage);
 			$('.bar').animate({'backgroundColor': '#A0F'}, 500);
+			$('.list').append(" (Cool)");
 
 			
         }
         else if(absDiff <=49 && absDiff >=25 && guess < 100 && guess > 0){
             $('.feedback').text('You\'re getting warm! ' + signMessage);
 			$('.bar').animate({'backgroundColor': '#F0A'}, 500);
+			$('.list').append(" (Warm)");
 
         }
         else if(absDiff <=24 && absDiff >=1 && guess < 100 && guess > 0){
             $('.feedback').text('You\'re hot! ' + signMessage);
 			$('.bar').animate({'backgroundColor': '#F06'}, 500);
+			$('.list').append(" (Hot!)");
 
         }
 		
