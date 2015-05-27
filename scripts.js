@@ -2,7 +2,7 @@
 // fix repeat indicator
 // make winning background
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 	$('.feedback').hide();
 	var numberChoice = Math.floor(Math.random()*100);
@@ -79,6 +79,7 @@ $(document).ready(function() {
         else if(absDiff == 0 && guess < 100 && guess > 0){
             $('.feedback').text('That\'s it!');
 			$('.bar').animate({'backgroundColor': '#F00'}, 500);
+			$('#form').css({'background': 'radial-gradient(at top, #F00, #C00, #A00, #400)'}, 500);
         };
         $('.feedback').slideDown();
     });
@@ -117,6 +118,7 @@ $(document).ready(function() {
 		$(".heartContainer").text("\u2665\u2665\u2665\u2665");
 		$('.bar').animate({'width': '200' ,'background-color': '#F0A'});
 		allGuesses = [];
+		$('#form').css({'background': 'linear-gradient( #666666, #444444)'}, 500);
 
 
     });
